@@ -1,21 +1,8 @@
-package BackTracking;
+package Heap;
 
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-class Triplet implements Comparable<Triplet>{
-    int dist;
-    int x;
-    int y;
-    Triplet(int dist, int x, int y){
-        this.dist = dist;
-        this.x = x;
-        this.y = y;
-    }
-    public int compareTo(Triplet t) {
-        return this.dist = t.dist;
-    }
-}
 public class KthClosestPointFromOrigin {
     public int[][] kClosest(int[][] points, int k) {
         PriorityQueue<Triplet> pq = new PriorityQueue<>(Collections.reverseOrder());
@@ -35,4 +22,19 @@ public class KthClosestPointFromOrigin {
         return ans;
     }
 
+    static class Triplet implements Comparable<Triplet> {
+        int dist;
+        int x;
+        int y;
+
+        Triplet(int dist, int x, int y) {
+            this.dist = dist;
+            this.x = x;
+            this.y = y;
+        }
+
+        public int compareTo(Triplet t) {
+            return this.dist = t.dist;
+        }
+    }
 }
