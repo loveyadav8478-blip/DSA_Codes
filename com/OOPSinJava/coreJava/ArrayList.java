@@ -1,4 +1,4 @@
-package OOPSinJava;
+package com.OOPSinJava.coreJava;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package OOPSinJava;
+package com.OOPSinJava.coreJava;
 
 public class FractionClass {
     public static Fraction add(Fraction f1, Fraction f2){

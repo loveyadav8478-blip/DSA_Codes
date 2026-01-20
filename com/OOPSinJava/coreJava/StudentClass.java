@@ -1,4 +1,4 @@
-package OOPSinJava;
+package com.OOPSinJava.coreJava;
 
 public class StudentClass {
 //    public static class Student{
